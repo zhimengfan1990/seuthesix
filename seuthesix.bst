@@ -1,6 +1,6 @@
 %% This is file seuthesix.bst
 %%This file provides the accompanying bibliography style of seuthesix.cls
-%% Author: James Fan, email: zhimengfan1990@163.com
+%% Copyright (c) 2016 James Fan, email: zhimengfan1990@163.com
 %% License: GNU General Public License, version 3
 
 

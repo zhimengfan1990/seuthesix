@@ -1,7 +1,8 @@
 %%
 %% This is file `seuthesix.cls',
 %% This file provides a LaTeX document class for typesetting thesis of Southeast University, Nanjing, China.
-%% Author: James Fan, email: zhimengfan1990@163.com
+%% Copyright (c) 2007--2016 Xu Yuan, email: xuyuan.cn@gmail.com
+%% Copyright (c) 2016 James Fan, email: zhimengfan1990@163.com
 %% License: GNU General Public License, version 3
 
  \NeedsTeXFormat{LaTeX2e}[1999/12/01]
