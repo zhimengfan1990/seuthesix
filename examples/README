@@ -1,0 +1,20 @@
+This project provides a LaTeX document class: ``seuthesix''
+for typesetting thesis of Southeast University, Nanjing, China.
+This package provides three important files:
+1. the seuthesix.cls.
+2. the seuthesix.cfg, this is the configuration file of seuthesix and
+will be loaded by seuthesix.cls at runtime. This file must be in the same directory as
+seuthesix.cls.
+3. the seuthesix.bst, this is the accompanying bibliography style file
+for seuthesix.cls.
+
+Subdirectories: /doc and /examples provide documentation and examples of this package.
+
+Author: James Fan, email: zhimengfan1990@163.com
+project homepage: none
+package version: 1.0
+License: GNU General Public License, version 3
+
+Note: This package is based on the package: ``seuthesis''
+maintained by Xu Yuan, which has many bugs now and not usable
+due to lack of maintenance for many years.
