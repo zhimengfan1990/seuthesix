@@ -1,9 +1,21 @@
 %%
 %% This is file `seuthesix.cls',
 %% This file provides a LaTeX document class for typesetting thesis of Southeast University, Nanjing, China.
-%% Copyright (c) 2007--2016 Xu Yuan, email: xuyuan.cn@gmail.com
+%% Copyright (c) 2007--2012 Xu Yuan, email: xuyuan.cn@gmail.com
 %% Copyright (c) 2016 James Fan, email: zhimengfan1990@163.com
 %% License: GNU General Public License, version 3
+%%This file is part of ``seuthesix'' package.
+%%``seuthesix'' is free software: you can redistribute it and/or modify
+%%it under the terms of the GNU General Public License as published by
+%%the Free Software Foundation, either version 3 of the License, or
+%%(at your option) any later version.
+%%``seuthesix'' is distributed in the hope that it will be useful,
+%%but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%GNU General Public License for more details.
+%%
+%%You should have received a copy of the GNU General Public License
+%%along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
  \NeedsTeXFormat{LaTeX2e}[1999/12/01]
  \ProvidesClass{seuthesix}[2016/01/09 1.0 The LaTeX template for academic  degree thesis of Southeast University]
