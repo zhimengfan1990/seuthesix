@@ -51,11 +51,11 @@
 
 \section{版权声明}
 
-\begin{tabular}{rl}
-版权所有\copyright 2007--2016 & 许 元 (\url{xuyuan.cn@gmail.com})\\
+\begin{tabular}{ll}
+版权所有\copyright 2007--2012 & 许 元 (\url{xuyuan.cn@gmail.com})\\
  &宋翊涵 (\url{syhannnn@gmail.com})\\
  & 黄小雨 (\url{nobel1984@gmail.com})\\
- & 樊智猛 (\url{zhimengfan1990@163.com})
+ 版权所有\copyright 2016 & 樊智猛 (\url{zhimengfan1990@163.com})
 \end{tabular}
 \par
 这一程序是自由软件，你可以遵照自由软件基金会发布的《GNU 通用公共许可证
@@ -73,8 +73,9 @@
 
 \chapter{下载和安装}
 \section{下载}
-各个发布的版本可以到本项目在 GitHub 中找到，访问
- \url{https://github.com/zhimengfan1990/seuthesix}下载。
+本项目最新源码可以到本项目在 GitHub 中找到，访问
+ \url{https://github.com/zhimengfan1990/seuthesix}下载。各发布版本可在\LaTeX 官方 CTAN： 
+ \url{http://www.ctan.org/pkg/seuthesix}下载。
 \section{安装}
 将宏包中的文件放在当前工作目录(与 \verb+.tex+ 文件放在同一目录下)即可，
 当然也可以安装到 \TeX 系统
@@ -97,7 +98,7 @@
 \item 目录
 \item \fbox{符号、变量、缩略词等本论文专用术语的注释表}
 \item 正文
-\item 致谢
+\item \fbox{致谢}
 \item 参考文献
 \item  \fbox{附录}
 \item \fbox{索引（中、英文）}
@@ -377,9 +378,9 @@
 \end{verbatim}
 }
 该命令切换到目录状态。
-此后的每个\verb+\chapter{<...>}+都会变成一个目录。
-章编号变为“目录A，目录B”，等等。
-该部分及后续的目录章为可选。
+此后的每个\verb+\chapter{<...>}+都会变成一个附录。
+章编号变为“附录A，附录B”，等等。
+该部分及后续的附录章为可选。
 \subsection{作者简介}
 {\color{magenta}
 \begin{verbatim}
@@ -392,7 +393,7 @@
 
 \chapter{注意事项}
 \section{文献引用}
-根据要求，文献应用应为数字标签(numerical label)，上标形式。但是有时也会用到正常形式，即非
+根据要求，文献引用应为数字标签(numerical label)，上标形式。但是有时也会用到正常形式，即非
 上标形式，用于正文叙述。为此分别提供了两个命令来实现。
 {\color{magenta}
 \begin{verbatim}
@@ -472,7 +473,7 @@
 {\color{magenta}
 \begin{verbatim}
 \nomenclature{LTE}{Long Term Evolution}
-\nomenclatue[noprefix]{$\mathcal{CN}(0, C)$}{协方差矩阵为$C$的循环对称复高斯分布}
+\nomenclature[noprefix]{$\mathcal{CN}(0, C)$}{协方差矩阵为$C$的循环对称复高斯分布}
 \end{verbatim}
 }
 \nomenclature{LTE}{Long Term Evolution}

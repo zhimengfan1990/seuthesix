@@ -1,0 +1,13 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{LTE}]\begingroup Long Term Evolution\nomeqref {4.0}
+		\nompageref{15}
+
+ \nomgroup{N}
+
+  \item [{$\mathcal{CN}(0, C)$}]\begingroup 协方差矩阵为$C$的循环对称复高斯分布\nomeqref {4.0}
+		\nompageref{15}
+
+\end{thenomenclature}
