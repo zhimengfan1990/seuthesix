@@ -22,47 +22,10 @@
 %% 
 %% You should have received a copy of the GNU General Public License
 %% along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
-\ProvidesClass{seuthesix}[2016/01/09 1.0 The LaTeX template for academic  degree thesis of Southeast University]
-\typeout{Document Class `seuthesix' 1.0 by James Fan (2016/01/09)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\ProvidesClass{seuthesix}[2016/01/15 1.0.1 The LaTeX template%
+for academic  degree thesis of Southeast University]
+\typeout{Document Class `seuthesix' 1.0.1 by James Fan (2016/01/15)}
 \newif\ifnocolorlinks\nocolorlinksfalse
 \newif\ifcoadvisor\coadvisorfalse
 \newif\ifengineering\engineeringfalse

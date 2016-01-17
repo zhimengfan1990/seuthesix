@@ -16,20 +16,17 @@
 %
 %You should have received a copy of the GNU General Public License
 %along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+%
 % \fi
-
+%
 % \iffalse
 %<*driver>
 \ProvidesFile{seuthesix.dtx}
 %</driver>
-%<class>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
-%<class>\ProvidesClass{seuthesix}[2016/01/09 1.0 The LaTeX template for academic  degree thesis of Southeast University]
-%<class>\typeout{Document Class `seuthesix' 1.0 by James Fan (2016/01/09)}
 %<*driver>
-[2016/01/09 1.0 The LaTeX template for academic  degree thesis of Southeast University]
+[2016/01/15 1.0.1 The LaTeX template for academic  degree thesis of Southeast University]
 %</driver> 
-
+%
 %<*driver>
 \documentclass[figurelist,tablelist,algorithmlist,nomlist,masters]{seuthesix}
 \usepackage{doc}
@@ -42,9 +39,9 @@
 \DocInput{seuthesix.dtx}
 \end{document}
 %</driver>
-
+%
 % \fi
-
+%
 % \CheckSum{0}
 %
 % \CharacterTable
@@ -90,10 +87,10 @@
 %This work presents an introduction of how to use \seuthesix document class to 
 %typeset the thesis/dissertation of Southeast University.
 %\end{englishabstract}
-
+%
 %\tableofcontents
 %\listofothers
-
+%
 %\mainmatter
 %\chapter{绪论}
 % \verb+seuthesix.cls+ 提供了符合规范的东南大学硕士与博士学位论文的\LaTeX 模板。
@@ -101,11 +98,11 @@
 % 漏在所难免，我们欢迎东大的 \LaTeX{er} 一起参加开发和完善。如果您对开发和完善\seuthesix
 % 感兴趣、有任何想法或建议，请与我们联系。该项目主页GitHub:
 % \url{https://github.com/zhimengfan1990/seuthesix}。
-
+%
 % 本模板基于早期许元同学发布的\verb+seuthesis.cls+。由于其中出现不少bug，无法顺利通过编译，
 % 因此决定进行修改。由于修改内容较大，最终决定单独发布一个新的package。为了表示两者的继承关系，
 % 新的package 取名为\seuthesix， 即\seuthesis{ }eXtented version。\seuthesix 初始版本号定为1.0。
-
+%
 % \section{版权声明}
 % \begin{tabular}{ll}
 % 版权所有\copyright 2007--2012 & 许 元 (\url{xuyuan.cn@gmail.com})\\
@@ -119,7 +116,7 @@
 % 发布这一程序的目的是希望它有用，但没有任何担保。甚至没有适合特定目的的隐含
 % 的担保。更详细的情况请参阅《GNU 通用公共许可证》
 % \footnote{\url{http://www.gnu.org/licenses/gpl.html}}
-
+%
 % \section{版本历史}
 % \begin{description}
 % \item[1.0] 2016/01/11，基于\seuthesis 构建新的\seuthesix 文档类。放弃\seuthesis 
@@ -127,7 +124,7 @@
 % 重新编写参考文献格式\verb+seuthesix.bst+。一次性生成A3大封面、A4封面和论文内容，简化了操作。
 %放弃对本科学位论文的支持(精力有限)。
 % \end{description}
-
+%
 % \chapter{下载和安装}
 % \section{下载}
 % 本项目最新源码可以到本项目在 GitHub 中找到，访问
@@ -138,10 +135,10 @@
 % 当然也可以安装到 \TeX 系统
 % 中，不过需要注意是参考文献样式文件 \verb+.bst+ 必须置于 \verb+TEXMF/bibtex/bst+ 目录或子目
 % 录下。
-
+%
 % 本模板在 \TeX{Live} 2015(Windows 7 和 LinuxMint 17.1 环境下) 通过\hologo{XeLaTeX} 编译通过。
 % 如有您在使用中有任何问题，欢迎与我联系。
-
+%
 %\newgeometry{left=4cm,right=4cm,textwidth=13cm}
 % \chapter{使用说明}
 % 学位论文应包括如下部分：\\
@@ -164,7 +161,7 @@
 % \item \fbox{后记}
 % \end{enumerate}
 % 并按此顺序排列，其中\fbox{加方框的条目}为可选。
-
+%
 %\section{模板整体框架}
 %使用 \seuthesix 模板的整体框架如下所示，其中\verb+<...>+表示可替换的文本(replaceable text)。
 %{\color{magenta}
@@ -266,7 +263,7 @@
 % 学术硕士，博士，和工程硕士的学位论文。三者的区别主要在于封面的logo 不同。此外，
 % 博士学位论文称为Dissertation, 而硕士学位论文(包括学术型和工程硕士)称为Thesis 。
 % 例如，学术型硕士应该是\verb+\documentclass[masters]{seuthesix}+。默认为\texttt{masters}。
-
+%
 %\DescribeMacro{nocolorlinks}
 % 除了这三项之外，还可以添加别的选项。如{\texttt{nocolorlinks}}用于最终论文付梓(打印)时去除
 % \texttt{hyperref}宏包。产生的颜色链接（用方框表示，但该方框在打印时无效），使得打印的纸质版在这些地方更清晰。
@@ -331,7 +328,7 @@
 %
 %\DescribeMacro{\makebigcover}
 %提供了相关信息之后，就可以利用这条命令来生成A3大封面。
-
+%
 %\DescribeMacro{\makecover}
 %这条命令生成A4中文封面和英文封面。
 %
@@ -403,7 +400,7 @@
 % 用于实现正常(非上标，normal)的数字形式文献引用\citen{mittlebach}。
 % \section{参考文献格式}
 % 见\verb+seuthesix.bst+的文档: 本文第\ref{bst}章。
-
+%
 % \section{图表格式处理}
 % 图名、表名字体字号已经有文档类 设定好，用户无需再次设定。但是，用户需要让它居中。图名位于图下方，
 % 表名位于表上方。图片文件可直接置于当前工作目录，也可置于当前工作目录的\texttt{figures}子目录下(用户根据需要，自己创建该子目录)。
@@ -425,10 +422,10 @@
 % ...
 % \end{tabular}.
 % \end{table}
-
+%
 % \end{verbatim}
 % 
-
+%
 % \begin{figure}
 % \centering
 % \caption{\seuthesix logo\label{logo}}
@@ -451,7 +448,7 @@
 % \end{algorithm}
 % \end{verbatim}
 % 
-
+%
 % 以上代码给出了算法\ref{algoinsight}的排版结果。
 % \begin{algorithm}
 % \caption{\label{algoinsight}如何使用\seuthesix 文档类}
@@ -462,7 +459,7 @@
 % \STATE 在使用中熟悉它
 % \end{algorithmic}
 % \end{algorithm}
-
+%
 % \section{术语生成}
 % \begingroup
 % \begin{verbatim}
@@ -476,21 +473,21 @@
 % 术语生成借助\texttt{nomencl}宏包。以上代码例子的排版结果在术语表中。对于数学符号，为使得它
 % 排在普通术语的后面，需要加上\texttt{[noprefix]}选项。
 % 编译时，第一次
-
+%
 % \verb+xelatex <filename>+ 
-
+%
 % 之后执行 
-
+%
 % \verb+makeindex <filename> .nlo -s nomencl.ist -o <filename> .nls+
- 
+%
 % 然后再次执行
-
+%
 % \verb+xelatex <filename>+
-
+%
 % 一次。实际上，考虑到参考文献的生成，最后应该执行
-
+%
 % \verb+xelatex <filename>+
-
+%
 % 至少两次。
 %
 % \chapter{\texttt{seuthesix.bst}参考文献格式\label{bst}}
@@ -501,7 +498,7 @@
 % 该文献格式支持中英文两种语言，采用中英文分离，分别进行处理的思想。对于中文文献的entry，
 % 要求在\verb=.bib=文献数据库中该entry 提供\texttt{language} field
 % ，其取值任意，但为了保持一致性，建议设为\verb+language={zh}+，或\verb+language="zh"+。
-
+%
 % \section{支持的Entry type}
 % \texttt{seuthesix.bst}支持以下几种不同的entry type。
 % \begin{description}
@@ -515,17 +512,17 @@
 % \item[news] 报纸新闻
 % \item[misc] 杂项，包括电子媒体及其他未能识别的entry type
 % \end{description}
-
+%
 % \section{各 entry type 所支持的field}
 % 不同的entry type所支持的field 不尽相同。对于每个entry type 而言，其中的field 可分为三类：
 % required, optional, ignored。required field 应该必须出现，否则BibTeX 会发出warning(由bst中的output.check函数发出)，
 % 且最终得到的格式不能保证美观。
 % optional field 可选，若未出现，不会导致BibTeX warning。ignored field 
 % 不起任何作用，被BibTeX 忽略。在entry type 对应的bibtex 函数(如 \verb=FUNCTION {article}=)中未使用的 field 都属于 ignored field。
-
+%
 % 下面列出各entry type所支持的field(即required field 和optional field)，
 % 其中required field使用黑体。如表\ref{entrytable}所示。
-
+%
 % \begin{table}
 % \centering
 % \caption{\label{entrytable}不同entry type支持的field}
@@ -565,7 +562,7 @@
 % 其取值任意，但建议设为\verb+language={zh}+，或\verb+language="zh"+，以保持一致性。
 % 这就是表\ref{entrytable}中的{{\bfseries lang}uage}一半黑体一半非黑体的原因。
 % 参考文献部分给出了很多文献格式的例子。
-
+%
 % \nocite{komine2004fundamental}
 % \nocite{dimitrov2015principles}
 % \nocite{fujimoto2014fastest}
@@ -575,16 +572,16 @@
 % \nocite{pt}
 % \nocite{thesis:a}
 % \nocite{thesis:b}
-
+%
 % \chapter{全文总结}
 % 本文主要介绍了如何使用\seuthesix \LaTeX 文档类来对东南大学硕士与博士学位论文进行排版。
 % 当然，\seuthesix 肯定存在许多不足的地方，希望各位读者予以指正。
-
+%
 % \acknowledgement
 % 感谢每一个支持\seuthesix 的人。
-
+%
 % \thesisbib{seuthesix}
-
+%
 % \appendix
 % \chapter{东南大学研究生学位论文的格式规定}
 % 见下一页。
@@ -593,6 +590,10 @@
 %\chapter{实现代码}
 %    \begin{macrocode}
 %<*class>
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesClass{seuthesix}[2016/01/15 1.0.1 The LaTeX template%
+for academic  degree thesis of Southeast University]
+\typeout{Document Class `seuthesix' 1.0.1 by James Fan (2016/01/15)}
 \newif\ifnocolorlinks\nocolorlinksfalse
 \newif\ifcoadvisor\coadvisorfalse
 \newif\ifengineering\engineeringfalse
