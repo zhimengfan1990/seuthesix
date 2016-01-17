@@ -123,8 +123,9 @@
 % \section{版本历史}
 % \begin{description}
 % \item[1.0] 2016/01/11，基于\seuthesis 构建新的\seuthesix 文档类。放弃\seuthesis 
-% 的xeCJK方案 ，直接采用\verb+ctexrep.cls+ 构建\verb+seuthesix.cls+，
-% 修正\verb+seuthesix.bst+，一次性生成A3大封面、A4封面和论文内容，简化了操作，放弃对本科学位论文的支持(精力有限)。
+% 的xeCJK方案 ，直接采用\verb+ctexrep.cls+ 构建\verb+seuthesix.cls+。
+% 重新编写参考文献格式\verb+seuthesix.bst+。一次性生成A3大封面、A4封面和论文内容，简化了操作。
+%放弃对本科学位论文的支持(精力有限)。
 % \end{description}
 
 % \chapter{下载和安装}
@@ -165,7 +166,7 @@
 % 并按此顺序排列，其中\fbox{加方框的条目}为可选。
 
 %\section{模板整体框架}
-%使用 \seuthesix 模板的整体框架如下所示，其中\verb+<...>+表示可替换的文本(replacement text)。
+%使用 \seuthesix 模板的整体框架如下所示，其中\verb+<...>+表示可替换的文本(replaceable text)。
 %{\color{magenta}
 %\begin{verbatim}
 %\documentclass[figurelist,tablelist,algorithmlist,nomlist,masters]{seuthesix}
@@ -362,6 +363,8 @@
 %术语目录名称考虑到不同学科有差异，可通过\verb+\setnomname{<name>}+进行设置。
 %同时，该命令最终会生成四个目录中的哪几个是通过文档类的选项来指定的，前文已经讲过。
 %
+%\DescribeMacro{\mainmatter}
+%该命令切换到正文状态。页码从阿拉伯数字1开始，此前页码为罗马数字形式。
 %给出以上命令之后，就可以开始正文章节的内容。正文章节遵循普通\LaTeX 的语法规则即可。
 %
 %完成正文章节之后，开始致谢、参考文献、附录、作者简介等。
@@ -586,6 +589,7 @@
 % \chapter{东南大学研究生学位论文的格式规定}
 % 见下一页。
 % \includepdf[pages=-,fitpaper]{rules.pdf}
+%\StopEventually{}
 %\chapter{实现代码}
 %    \begin{macrocode}
 %<*class>
@@ -920,13 +924,15 @@ listtablename={表格目录}
 \includegraphics[width=\textwidth]{figures/back-cover.png}}
 \end{picture}
 \begin{picture}(0,0)
-\put(18,-12){%
+\put(18,-10){%
 \parbox[c]{\ccwd}{%
 \bfseries%
 \setlength{\baselineskip}{0pt}
-\@title
+\@title\\
+\rule{0pt}{\ccwd}\\
+\@subtitle\\
 \vspace*{2cm}
-\@author
+\@author\\
 \vspace*{2cm}
 \universityname
 }
@@ -1307,4 +1313,5 @@ chapter/titleformat=\large\heiti
 %    \end{macrocode}
 % \resume{作者简介}
 % \seuthesix 开发组，目前仅有四人(当前活跃开发者只有樊智猛一人)，希望感兴趣的同学加入。
+%\Finale
 \endinput
