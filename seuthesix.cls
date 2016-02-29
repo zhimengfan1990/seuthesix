@@ -1,4 +1,4 @@
-%%
+﻿%%
 %% This is file `seuthesix.cls',
 %% generated with the docstrip utility.
 %%
@@ -22,10 +22,47 @@
 %% 
 %% You should have received a copy of the GNU General Public License
 %% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
-\ProvidesClass{seuthesix}[2016/01/15 1.0.1 The LaTeX template%
-for academic  degree thesis of Southeast University]
-\typeout{Document Class `seuthesix' 1.0.1 by James Fan (2016/01/15)}
+\ProvidesClass{seuthesix}[2016/01/09 1.0 The LaTeX template for academic  degree thesis of Southeast University]
+\typeout{Document Class `seuthesix' 1.0 by James Fan (2016/01/09)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \newif\ifnocolorlinks\nocolorlinksfalse
 \newif\ifcoadvisor\coadvisorfalse
 \newif\ifengineering\engineeringfalse
@@ -291,7 +328,7 @@ listtablename={表格目录}
 \includegraphics[width=\textwidth]{figures/back-cover.png}}
 \end{picture}
 \begin{picture}(0,0)
-\put(18,-10){%
+\put(18,-11){%
 \parbox[c]{\ccwd}{%
 \bfseries%
 \setlength{\baselineskip}{0pt}
@@ -527,7 +564,7 @@ listtablename={表格目录}
        \par
      }
 
-     \vspace{1.0in}%
+     \vspace{2cm}%
      {\fontsize{16pt}{24pt}\selectfont
        {A
        \ifmasters
@@ -549,7 +586,7 @@ listtablename={表格目录}
        {\@coadvisortitleeng\  \@coadvisornameeng}\\
        \else
        \fi
-       {\vspace{0.5in}}%
+       %{\vspace{0.5in}}%
        {\vfill}
        {\@departmenteng}\\
        {\universitynameeng}\\
@@ -563,6 +600,7 @@ listtablename={表格目录}
  \newcommand\makecover{%
  \makechinesecover
  \makeenglishcover
+ \seudeclare
  }
 
 \renewenvironment{abstract}[1]
