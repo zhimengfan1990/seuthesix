@@ -1,11 +1,11 @@
 This project provides a LaTeX document class: ``seuthesix''
 for typesetting thesis of Southeast University, Nanjing, China.
 This package provides three important files:
-1. the seuthesix.cls.
-2. the seuthesix.cfg, this is the configuration file of seuthesix and
+1. seuthesix.cls.
+2. seuthesix.cfg, this is the configuration file of seuthesix and
 will be loaded by seuthesix.cls at runtime. This file must be in the same directory as
 seuthesix.cls.
-3. the seuthesix.bst, this is the accompanying bibliography style file
+3. seuthesix.bst, this is the accompanying bibliography style file
 for seuthesix.cls.
 
 Maintainer: James Fan
