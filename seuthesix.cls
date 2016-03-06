@@ -1,4 +1,4 @@
-﻿%%
+%%
 %% This is file `seuthesix.cls',
 %% generated with the docstrip utility.
 %%
@@ -109,17 +109,18 @@ chapter/format=\centering,
 chapter/nameformat=\large\heiti,
 chapter/numberformat=\large\heiti,
 chapter/titleformat=\large\heiti,
+chapter/beforeskip=0pt,
 section/format=\raggedright,
 section/nameformat={\large\bfseries},
 section/numberformat={\large\bfseries},
 section/titleformat={\sihao\bfseries},
-subsection/format=\normalsize\mdseries\raggedright,
-subsubsection/format=\normalsize\mdseries\raggedright,
+subsection/format=\sihao\mdseries\raggedright,
+subsubsection/format=\sihao\mdseries\raggedright,
 listfigurename={插图目录},
 listtablename={表格目录}
 }
 \RequirePackage[font=small]{caption}
-\RequirePackage{mathptmx}
+%\RequirePackage{mathptmx}
 \setmainfont[Mapping=tex-text]{Times New Roman}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -169,13 +170,23 @@ listtablename={表格目录}
 \clearpage\thispagestyle{empty} %backcover always at even page.
 \includegraphics[width=\textwidth]{figures/back-cover.png}
 }
-\RequirePackage[bottom=1in,left=2.5cm,right=2.5cm,a4paper]{geometry}
+\RequirePackage[top=1.2in,bottom=1in,left=2.5cm,right=2.5cm,a4paper]{geometry}
 \RequirePackage{fancyhdr}
-\pagestyle{fancy}
+\fancypagestyle{seustyle}{%
 \fancyhf{}
 \fancyhead[CO]{\xiaowuhao\universityname{}\@thesistype}
 \fancyhead[CE]{ \xiaowuhao\leftmark}
 \fancyfoot[CO,CE]{\thepage}
+}
+\pagestyle{seustyle}
+
+\fancypagestyle{nom}{%
+\fancyhf{} 
+\fancyhead[CO]{\xiaowuhao\universityname{}\@thesistype}
+\fancyhead[CE]{ \xiaowuhao\nomname}
+\fancyfoot[CO,CE]{\thepage}
+}
+
 \renewcommand{\headrulewidth}{0.4pt}
 \RequirePackage{eso-pic}
 \renewcommand{\author}[2]{
@@ -586,7 +597,6 @@ listtablename={表格目录}
        {\@coadvisortitleeng\  \@coadvisornameeng}\\
        \else
        \fi
-       %{\vspace{0.5in}}%
        {\vfill}
        {\@departmenteng}\\
        {\universitynameeng}\\
@@ -670,6 +680,7 @@ chapter/titleformat=\large\heiti
 \cleardoublepage
 \phantomsection
 \addcontentsline{toc}{chapter}{\nomname}
+\pagestyle{nom}
 \printnomenclature
 \fi
 
@@ -678,6 +689,7 @@ chapter/titleformat=\large\heiti
 \newcommand{\mainmatter}{%
 \cleardoublepage
 \pagenumbering{arabic}
+\pagestyle{seustyle}
 }
 
 \newcommand{\acknowledgement}{%
