@@ -168,8 +168,12 @@ listtablename={表格目录}
 \newcommand{\backcover}{
 \clearpage\thispagestyle{empty}\cleardoublepage\mbox{ }
 \clearpage\thispagestyle{empty} %backcover always at even page.
-\includegraphics[width=\textwidth]{figures/back-cover.png}
+\begin{picture}(0,0)
+ \put(-1,-22){ %
+\includegraphics[width=\textwidth]{figures/back-cover.png}}
+\end{picture}
 }
+
 \RequirePackage[top=1.2in,bottom=1in,left=2.5cm,right=2.5cm,a4paper]{geometry}
 \RequirePackage{fancyhdr}
 \fancypagestyle{seustyle}{%
@@ -335,7 +339,7 @@ listtablename={表格目录}
 \includegraphics[width=2cm]{figures/seu-color-logo.png}}
 \end{picture}
 \begin{picture}(0,0)
- \put(0,-22){ %
+ \put(-1,-22){ %
 \includegraphics[width=\textwidth]{figures/back-cover.png}}
 \end{picture}
 \begin{picture}(0,0)
@@ -445,7 +449,7 @@ listtablename={表格目录}
 }
 }
 
-\AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(0,22.5){%
+\AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(0,23){%
 \parbox{\paperwidth}{\centering\includegraphics[width=\paperwidth]{figures/front-cover.jpg}}}}%
 
    \ifengineering
