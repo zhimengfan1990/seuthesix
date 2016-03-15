@@ -685,7 +685,7 @@ chapter/titleformat=\large\heiti
 \phantomsection
 \addcontentsline{toc}{chapter}{\nomname}
 \pagestyle{nom}
-\printnomenclature
+\printnomenclature[1in]
 \fi
 
 }
