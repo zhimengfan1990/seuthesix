@@ -20,7 +20,6 @@
 \usepackage{hologo}
 \usepackage{pdfpages}
 \begin{document}
-
 \categorynumber{000} 
 \UDC{000}            
 \secretlevel{公开}   
@@ -63,6 +62,7 @@ typeset the thesis/dissertation of Southeast University.
 本模板基于早期许元同学发布的\verb+seuthesis.cls+。由于其中出现不少bug，无法顺利通过编译，
 因此决定进行修改。由于修改内容较大，最终决定单独发布一个新的package。为了表示两者的继承关系，
 新的package 取名为\seuthesix， 即\seuthesis{ }eXtented version。
+
 
 \section{版权声明}
 \begin{tabular}{ll}
@@ -108,7 +108,7 @@ typeset the thesis/dissertation of Southeast University.
 如有您在使用中有任何问题，欢迎与我们联系。
 
 \chapter{使用说明}
-学位论文应包括如下部分：\\
+东南大学硕士与博士学位论文应包括如下部分：\\
 \begin{enumerate}
 \itshape
 \item 中文封面
@@ -134,10 +134,10 @@ typeset the thesis/dissertation of Southeast University.
 {\color{magenta}
 \begin{verbatim}
 \documentclass[figurelist,tablelist,algorithmlist,nomlist,masters]{seuthesix}
-文档开始，指定选项
+%文档开始，指定选项
 \usepackage{<hologo>}
 \usepackage{<pdfpages>}%载入更多宏包
-
+\begin{document}
 \categorynumber{<000>} % 分类采用《中国图书资料分类法》
 \UDC{<000>}            %《国际十进分类法UDC》的类号
 \secretlevel{<公开>}    %学位论文密级分为"公开"、"内部"、"秘密"和"机密"四种
@@ -594,7 +594,7 @@ typeset the thesis/dissertation of Southeast University.>
 之后执行 
 
 {\color{magenta}%
-\verb+makeindex <filename> .nlo -s nomencl.ist -o <filename> .nls+
+\verb+makeindex <filename>.nlo -s nomencl.ist -o <filename> .nls+
 }
 
 然后再次执行
@@ -699,7 +699,7 @@ misc &\raggedright{\bfseries }author, title, url, year, month, day, note, {{\bfs
 当然，\seuthesix 肯定存在许多不足的地方，希望各位读者予以指正。
 
 \acknowledgement
-感谢每一个支持\seuthesix 的人。
+\seuthesix  自从发布之后，得到许多用户的支持，同时我们也收到不少用户宝贵的建议。其中一些建议已经帮助我们改进了\seuthesix 。感谢每一位支持\seuthesix 的人！
 
 \thesisbib{seuthesix}
 
