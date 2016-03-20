@@ -1,10 +1,4 @@
-%%
-%% This is file `seuthesix.cls',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% seuthesix.dtx  (with options: `class')
+
 %%  This is file `seuthesix.cls',
 %%  This file provides a LaTeX document class for typesetting thesis of Southeast University, Nanjing, China.
 %%  Copyright (c) 2007--2012 Xu Yuan, email: xuyuan.cn@gmail.com
@@ -25,43 +19,8 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
-\ProvidesClass{seuthesix}[2016/01/09 1.0 The LaTeX template for academic  degree thesis of Southeast University]
-\typeout{Document Class `seuthesix' 1.0 by James Fan (2016/01/09)}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\ProvidesClass{seuthesix}[2016/03/20 1.0.1 The LaTeX template for academic  degree thesis of Southeast University]
+\typeout{Document Class `seuthesix' 1.0.1 by James Fan (2016/03/20)}
 
 \newif\ifnocolorlinks\nocolorlinksfalse
 \newif\ifcoadvisor\coadvisorfalse
@@ -727,5 +686,4 @@ chapter/titleformat=\large\heiti
  \textsc{Thesis}}
 }
 \endinput
-%%
 %% End of file `seuthesix.cls'.

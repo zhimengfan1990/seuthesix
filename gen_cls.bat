@@ -1,1 +1,0 @@
-xetex seuthesix.ins &
