@@ -13,7 +13,7 @@
 %% but WITHOUT ANY WARRANTY; without even the implied warranty of
 %% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 %% GNU General Public License for more details.
-%% 
+%%
 %% You should have received a copy of the GNU General Public License
 %% along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -62,7 +62,7 @@
 \newcommand{\liuhao}{\fontsize{7.5bp}{9bp}\selectfont}
 \newcommand{\xiaoliuhao}{\fontsize{6.5bp}{7.5bp}\selectfont}
 \newcommand{\qihao}{\fontsize{5.5bp}{6.5bp}\selectfont}
-\setCJKmainfont{SimSun}
+\setCJKmainfont[FallBack=simsunb.ttf, BoldFont = simhei.ttf, ItalicFont = simkai.ttf]{simsun.ttc}
 \ctexset{%
 chapter/format=\centering,
 chapter/nameformat=\large\heiti,
@@ -73,8 +73,8 @@ section/format=\raggedright,
 section/nameformat={\large\bfseries},
 section/numberformat={\large\bfseries},
 section/titleformat={\sihao\bfseries},
-subsection/format=\sihao\mdseries\raggedright,
-subsubsection/format=\sihao\mdseries\raggedright,
+subsection/format=\xiaosihao\heiti\raggedright,
+subsubsection/format=\xiaosihao\heiti\raggedright,
 listfigurename={插图目录},
 listtablename={表格目录}
 }
@@ -144,7 +144,7 @@ listtablename={表格目录}
 \pagestyle{seustyle}
 
 \fancypagestyle{nom}{%
-\fancyhf{} 
+\fancyhf{}
 \fancyhead[CO]{\xiaowuhao\universityname{}\@thesistype}
 \fancyhead[CE]{ \xiaowuhao\nomname}
 \fancyfoot[CO,CE]{\thepage}
