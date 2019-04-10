@@ -666,7 +666,7 @@ chapter/titleformat=\large\heiti
 \bibliographystyle{seuthesix}
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{\bibname}
+\addcontentsline{toc}{chapter}{#1}
 \bibliography{#1}
 }
 
